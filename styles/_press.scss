@@ -1,0 +1,19 @@
+.images-left {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+}
+
+.images-right {
+    align-items: center;
+    display: flex;
+    justify-content: space-between; 
+    margin: 15px;
+}
+
+@media only screen and (max-width:768px) {
+    .image-alone {
+        display: none;
+    }
+}

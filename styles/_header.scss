@@ -2,4 +2,29 @@ header {
     align-items: center;
     display: flex;
     justify-content: space-between;
+    margin: 32px;
+}
+
+.logo {
+    height: 34px;
+}
+
+header nav {
+    display: none;
+}
+
+.hamburger-icon {
+    height: 22px;
+}
+
+@media only screen and (min-width:768px) {
+    .hamburger-icon {
+        display: none;
+    }
+    .navigation {
+        display: inline-flex;
+    }
+    .header-right .log-in-button {
+        display: inline-block;
+    }
 }

@@ -1,5 +1,53 @@
-footer {
-    img {
-        width: 10px;
+.footer-left {
+    margin: 10px 0 10px 32px;
+}
+.footer-right {
+    a {
+    text-decoration: none;
+    justify-content: space-between; 
+    color: $textDark;
+    }
+    h6 {
+    color: $textBlack;
+    }
+}
+
+.footer-nav-top {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    a {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.footer-nav-bot {
+    display: flex;
+    align-items: center;
+    a {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+footer p {
+    color: #808080;
+}
+
+.footer-bottom {
+    margin: 10px 0 80px 32px;
+}
+
+@media only screen and (max-width:768px) {
+    .footer-bottom :nth-child(2) {
+        display: none;
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }

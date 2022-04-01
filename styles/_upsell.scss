@@ -14,3 +14,11 @@
         padding-bottom: 20px;
     }
 }
+
+@media only screen and (min-width:768px) {
+    .upsell {
+        background-size: auto;
+        margin: 40px 80px 40px 80px;
+        border-radius: 10px;
+    }
+}

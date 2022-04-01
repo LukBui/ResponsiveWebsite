@@ -18,13 +18,21 @@ header nav {
 }
 
 @media only screen and (min-width:768px) {
+    header {
+        margin: 40px 80px 40px 100px;
+    }
     .hamburger-icon {
         display: none;
     }
-    .navigation {
+    header nav {
         display: inline-flex;
     }
-    .header-right .log-in-button {
-        display: inline-block;
+    header nav a {
+        text-decoration: none;
+        color: $textDark;
+        padding: 28px;
+    }
+    .sign-up {
+        color: #ff3998;
     }
 }

@@ -727,7 +727,9 @@ template {
   .showcase {
     margin: 40px 80px 100px 80px;
     overflow: hidden;
-    overflow-x: scroll;
+  }
+  .showcase ::-webkit-scrollbar {
+    display: none;
   }
   .showcase-nfts {
     display: -webkit-box;

@@ -1,3 +1,257 @@
+body {
+  background: white;
+  font-family: 'Inter', sans-serif;
+}
+
+.footer-left {
+  margin: 10px 0 0 32px;
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+
+.footer-right {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.footer-right a {
+  color: #555555;
+  display: block;
+  padding: 10px 0 0 0;
+  text-decoration: none;
+}
+
+.footer-right h6 {
+  color: #111111;
+  font-size: 16px;
+}
+
+footer p {
+  color: #808080;
+}
+
+.footer-bottom-left {
+  margin: 40px 0 80px 32px;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer-bottom-right {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  footer .footer-left, footer .footer-bottom-left {
+    margin: 10px 0 10px 80px;
+  }
+  .footer-right {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    padding-top: 20px;
+    margin-right: 80px;
+  }
+  .footer-bottom-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 10px 0 80px 32px;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-right: 80px;
+  }
+}
+
+header {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 32px;
+}
+
+.logo {
+  height: 34px;
+}
+
+header nav {
+  display: none;
+}
+
+.hamburger-icon {
+  height: 22px;
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    margin: 40px 0px 40px 80px;
+  }
+  .hamburger-icon {
+    display: none;
+  }
+  header nav {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+  header nav a {
+    color: #555555;
+    text-decoration: none;
+    margin-right: 80px;
+  }
+  .sign-up {
+    color: #ff3998;
+  }
+}
+
+.hero h1 {
+  color: #111111;
+  font-size: 48px;
+  font-weight: 900;
+  margin: 10px 0 10px 32px;
+}
+
+.hero h2 {
+  color: #ff3998;
+  font-size: 16px;
+  margin: 10px 0 10px 32px;
+}
+
+.hero p {
+  color: #555555;
+  font-size: 16px;
+  margin: 10px 0 10px 32px;
+}
+
+.hero button {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(255, 255, 255, 0)), linear-gradient(50deg, #eb5884, #3dd84a);
+  background-origin: border-box;
+  border-radius: 100px;
+  border: 4px solid transparent;
+  -webkit-box-shadow: 2px 1000px 1px #fff inset;
+          box-shadow: 2px 1000px 1px #fff inset;
+  color: #555555;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+  height: 75px;
+  margin: 10px 0 10px 32px;
+  width: 188px;
+}
+
+.hero img {
+  height: 350px;
+}
+
+.split {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 768px) {
+  .split {
+    margin: 40px 80px 0px 80px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .split img {
+    height: 500px;
+  }
+  .hero h1, .hero h2, .hero p, .hero button {
+    margin: 10px 0 10px 0px;
+  }
+}
+
+.hero-bottom {
+  border-bottom: 2px solid #EEEEEE;
+  border-top: 2px solid #EEEEEE;
+  padding-top: 50px;
+}
+
+.hero-bottom h1 {
+  color: #111111;
+  font-weight: 900;
+  font-size: 48px;
+  margin: 10px 0 10px 32px;
+}
+
+.hero-bottom h2 {
+  color: #ff3998;
+  font-size: 16px;
+  margin: 10px 0 10px 32px;
+}
+
+.hero-bottom p {
+  color: #555555;
+  font-size: 16px;
+  margin: 10px 0 10px 32px;
+}
+
+.hero-bottom button {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(255, 255, 255, 0)), linear-gradient(50deg, #eb5884, #3dd84a);
+  background-origin: border-box;
+  border-radius: 100px;
+  border: 4px solid transparent;
+  -webkit-box-shadow: 2px 1000px 1px #fff inset;
+          box-shadow: 2px 1000px 1px #fff inset;
+  color: #555555;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+  height: 75px;
+  margin: 10px 0 10px 32px;
+  width: 188px;
+}
+
+.hero-bottom img {
+  height: 350px;
+}
+
+.split {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 768px) {
+  .split {
+    margin: 40px 80px 0px 80px;
+  }
+  .split img {
+    height: 500px;
+  }
+  .hero-bottom h1, .hero-bottom h2, .hero-bottom p, .hero-bottom button {
+    margin: 10px 0 10px 0px;
+  }
+}
+
 /**
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
@@ -338,221 +592,14 @@ template {
   display: none;
 }
 
-header {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 32px;
-}
-
-.logo {
-  height: 34px;
-}
-
-header nav {
-  display: none;
-}
-
-.hamburger-icon {
-  height: 22px;
-}
-
-@media only screen and (min-width: 768px) {
-  header {
-    margin: 40px 80px 40px 100px;
-  }
-  .hamburger-icon {
-    display: none;
-  }
-  header nav {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-  }
-  header nav a {
-    text-decoration: none;
-    color: #555555;
-    padding: 28px;
-  }
-  .sign-up {
-    color: #ff3998;
-  }
-}
-
-body {
-  background: white;
-  font-family: 'Inter', sans-serif;
-}
-
-.hero h1 {
-  color: #111111;
-  font-weight: 900;
-  font-size: 48px;
-  margin: 10px 0 10px 32px;
-}
-
-.hero h2 {
-  color: #ff3998;
-  font-size: 16px;
-  margin: 10px 0 10px 32px;
-}
-
-.hero p {
-  color: #555555;
-  font-size: 16px;
-  margin: 10px 0 10px 32px;
-}
-
-.hero button {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(255, 255, 255, 0)), linear-gradient(50deg, #eb5884, #3dd84a);
-  background-origin: border-box;
-  border-radius: 100px;
-  border: 4px solid transparent;
-  -webkit-box-shadow: 2px 1000px 1px #fff inset;
-          box-shadow: 2px 1000px 1px #fff inset;
-  color: #555555;
-  font-size: 20px;
-  font-weight: 600;
-  height: 75px;
-  margin: 10px 0 10px 32px;
-  width: 188px;
-}
-
-.hero img {
-  height: 350px;
-}
-
-.split {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  overflow: hidden;
-}
-
-@media only screen and (min-width: 768px) {
-  .split {
-    margin: 40px 80px 0px 80px;
-  }
-  .split img {
-    height: 500px;
-  }
-}
-
-footer {
-  margin: 0 80px;
-}
-
-.footer-left {
-  margin: 10px 0 0 32px;
-  padding-top: 50px;
-  padding-bottom: 10px;
-}
-
-.footer-right {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-}
-
-.footer-right a {
-  display: block;
-  padding: 10px 0 0 0;
-  color: #555555;
-  text-decoration: none;
-}
-
-.footer-right h6 {
-  color: #111111;
-}
-
-footer p {
-  color: #808080;
-}
-
-.footer-bottom-left {
-  margin: 40px 0 80px 32px;
-}
-
-@media only screen and (max-width: 768px) {
-  .footer-bottom-right {
-    display: none;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .footer-bottom {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  footer {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-  }
-  .footer-right {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
-    padding-top: 20px;
-  }
-  .footer-bottom-right {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: 40px 0 80px 32px;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
-}
-
-.upsell {
-  background: url(/assets/background.svg) no-repeat center;
-  background-size: cover;
-  text-align: left;
-}
-
-.upsell h2 {
-  font-size: 40px;
-  font-weight: 600;
-  padding-top: 100px;
-  margin-left: 20px;
-}
-
-.upsell p {
-  font-size: 20px;
-  margin-left: 20px;
-  padding-bottom: 20px;
-}
-
-@media only screen and (min-width: 768px) {
-  .upsell {
-    background-size: auto;
-    margin: 40px 80px 40px 80px;
-    border-radius: 10px;
-  }
-}
-
 .company-images {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   gap: 20px;
-  padding: 32px;
+  padding: 40px;
+  margin: 10px 40px 10px 40px;
 }
 
 .company-images .boomerang {
@@ -564,7 +611,7 @@ footer p {
   margin: auto;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 968px) {
   .company-images {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -577,9 +624,12 @@ footer p {
 
 .showcase {
   margin: 10px 0 50px 32px;
+}
+
+.showcase-nfts {
+  overflow-y: hidden;
   overflow-x: hidden;
   overflow-x: scroll;
-  overflow-y: hidden;
 }
 
 .nft {
@@ -628,13 +678,13 @@ footer p {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  height: 75px;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  height: 75px;
-  width: 110px;
   margin-left: 10px;
   margin-right: 50px;
+  width: 110px;
 }
 
 .showcase-nfts .nft-info .right-info {
@@ -647,10 +697,10 @@ footer p {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  height: 75px;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  height: 75px;
   width: 110px;
 }
 
@@ -660,13 +710,13 @@ footer p {
 }
 
 .showcase-nfts .nft-info .bid {
-  font-size: 12px;
   color: #555555;
+  font-size: 12px;
 }
 
 .showcase-nfts .nft-info .nft-name, .showcase-nfts .nft-info .price {
-  font-size: 20px;
   color: #111111;
+  font-size: 20px;
 }
 
 .showcase-nfts .nft-info .nft-number, .showcase-nfts .nft-info .timeline {
@@ -677,66 +727,42 @@ footer p {
   .showcase {
     margin: 40px 80px 100px 80px;
     overflow: hidden;
+    overflow-x: scroll;
+  }
+  .showcase-nfts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
-.hero-bottom {
-  border-bottom: 2px solid #EEEEEE;
-  border-top: 2px solid #EEEEEE;
-  padding-top: 50px;
+.upsell {
+  background-position: center;
+  background-image: url("../assets/background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.hero-bottom h1 {
-  color: #111111;
-  font-weight: 900;
-  font-size: 48px;
-  margin: 10px 0 10px 32px;
-}
-
-.hero-bottom h2 {
-  color: #ff3998;
-  font-size: 16px;
-  margin: 10px 0 10px 32px;
-}
-
-.hero-bottom p {
-  color: #555555;
-  font-size: 16px;
-  margin: 10px 0 10px 32px;
-}
-
-.hero-bottom button {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(255, 255, 255, 0)), linear-gradient(50deg, #eb5884, #3dd84a);
-  background-origin: border-box;
-  border-radius: 100px;
-  border: 4px solid transparent;
-  -webkit-box-shadow: 2px 1000px 1px #fff inset;
-          box-shadow: 2px 1000px 1px #fff inset;
-  color: #555555;
-  font-size: 20px;
+.upsell h2 {
+  font-size: 40px;
   font-weight: 600;
-  height: 75px;
-  margin: 10px 0 10px 32px;
-  width: 188px;
+  margin-left: 20px;
+  padding-top: 100px;
 }
 
-.hero-bottom img {
-  height: 350px;
-}
-
-.split {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  overflow: hidden;
+.upsell p {
+  font-size: 20px;
+  margin-left: 20px;
+  padding-bottom: 20px;
 }
 
 @media only screen and (min-width: 768px) {
-  .split {
-    margin: 40px 80px 0px 80px;
-  }
-  .split img {
-    height: 500px;
+  .upsell {
+    border-radius: 10px;
+    margin: 40px 80px 40px 80px;
   }
 }
 /*# sourceMappingURL=styles.css.map */

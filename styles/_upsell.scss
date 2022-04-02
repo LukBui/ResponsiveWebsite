@@ -1,12 +1,13 @@
 .upsell {
-    background: url(/assets/background.svg) no-repeat center;
+    background-position: center;
+    background-image: url('../assets/background.svg');
+    background-repeat: no-repeat;
     background-size: cover;
-    text-align: left;
     h2 {
         font-size: $textSmall;
         font-weight: 600;
-        padding-top: 100px;
         margin-left: 20px;
+        padding-top: 100px;
     }
     p {
         font-size: 20px;
@@ -17,8 +18,7 @@
 
 @media only screen and (min-width:768px) {
     .upsell {
-        background-size: auto;
-        margin: 40px 80px 40px 80px;
         border-radius: 10px;
+        margin: 40px 80px 40px 80px;
     }
 }

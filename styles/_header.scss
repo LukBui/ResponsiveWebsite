@@ -19,7 +19,7 @@ header nav {
 
 @media only screen and (min-width:768px) {
     header {
-        margin: 40px 80px 40px 100px;
+        margin: 40px 0px 40px 80px;
     }
     .hamburger-icon {
         display: none;
@@ -28,9 +28,9 @@ header nav {
         display: inline-flex;
     }
     header nav a {
-        text-decoration: none;
         color: $textDark;
-        padding: 28px;
+        text-decoration: none;
+        margin-right: 80px;
     }
     .sign-up {
         color: #ff3998;

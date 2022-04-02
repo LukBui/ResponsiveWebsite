@@ -1,8 +1,11 @@
 .showcase {
     margin: 10px 0 50px 32px;
+
+}
+.showcase-nfts {
+    overflow-y: hidden;
     overflow-x: hidden;
     overflow-x: scroll;
-    overflow-y: hidden;
 }
 
 .nft {
@@ -27,18 +30,18 @@
             display: flex;
             flex-wrap: wrap;
             flex-direction: row;
-            justify-content: flex-start;
             height: 75px;
-            width: 110px;
+            justify-content: flex-start;
             margin-left: 10px;
             margin-right: 50px;
+            width: 110px;
         }
         .right-info {
             display: flex;
             flex-wrap: wrap;
             flex-direction: row;
-            justify-content: flex-end;
             height: 75px;
+            justify-content: flex-end;
             width: 110px;
         }
         .series {
@@ -47,12 +50,12 @@
 
         }
         .bid{
-            font-size: 12px;
             color: $textDark;
+            font-size: 12px;
         }
         .nft-name, .price {
-            font-size: 20px;
             color: $textBlack;
+            font-size: 20px;
         }
         .nft-number, .timeline {
             color: $textDark
@@ -64,5 +67,10 @@
     .showcase {
         margin: 40px 80px 100px 80px;
         overflow: hidden;
+        overflow-x: scroll;
+    }
+    .showcase-nfts {
+        display: flex;
+        justify-content: space-between;
     }
 }

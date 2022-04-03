@@ -3,9 +3,24 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
+footer h6 {
+  color: #555555;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
 .footer-left {
   margin: 10px 0 0 32px;
   padding-top: 50px;
+  padding-bottom: 10px;
+}
+
+.footer-left img {
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+.footer-left p {
   padding-bottom: 10px;
 }
 
@@ -21,11 +36,6 @@ body {
   display: block;
   padding: 10px 0 0 0;
   text-decoration: none;
-}
-
-.footer-right h6 {
-  color: #111111;
-  font-size: 16px;
 }
 
 footer p {
@@ -599,7 +609,7 @@ template {
       grid-template-columns: 1fr 1fr;
   gap: 20px;
   padding: 40px;
-  margin: 10px 40px 10px 40px;
+  margin: 10px 20px 10px 20px;
 }
 
 .company-images .boomerang {
@@ -624,6 +634,10 @@ template {
 
 .showcase {
   margin: 10px 0 50px 32px;
+}
+
+.showcase ::-webkit-scrollbar {
+  display: none;
 }
 
 .showcase-nfts {
@@ -727,9 +741,6 @@ template {
   .showcase {
     margin: 40px 80px 100px 80px;
     overflow: hidden;
-  }
-  .showcase ::-webkit-scrollbar {
-    display: none;
   }
   .showcase-nfts {
     display: -webkit-box;

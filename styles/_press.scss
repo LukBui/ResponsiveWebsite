@@ -3,7 +3,7 @@
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     padding: 40px;
-    margin: 10px 40px 10px 40px;
+    margin: 10px 20px 10px 20px;
     .boomerang {
         display: none;
     }
@@ -14,10 +14,10 @@
 }
 
 @media only screen and (min-width:968px) {
-        .company-images {
-            display: flex;
-            .boomerang {
-                display: unset;
-            }
+    .company-images {
+        display: flex;
+        .boomerang {
+            display: unset;
         }
     }
+}

@@ -2,6 +2,11 @@
     margin: 10px 0 50px 32px;
 
 }
+
+.showcase ::-webkit-scrollbar {
+    display: none;
+}
+
 .showcase-nfts {
     overflow-y: hidden;
     overflow-x: hidden;
@@ -67,9 +72,6 @@
     .showcase {
         margin: 40px 80px 100px 80px;
         overflow: hidden;
-    }
-    .showcase ::-webkit-scrollbar {
-        display: none;
     }
     .showcase-nfts {
         display: flex;

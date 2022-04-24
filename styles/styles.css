@@ -31,11 +31,16 @@ footer h6 {
       grid-template-columns: 1fr 1fr;
 }
 
-.footer-right a {
-  color: #555555;
+.footer-right ul li {
   display: block;
   padding: 10px 0 0 0;
   text-decoration: none;
+  list-style: none;
+}
+
+.footer-right a {
+  text-decoration: none;
+  color: #555555;
 }
 
 footer p {
@@ -46,10 +51,8 @@ footer p {
   margin: 40px 0 80px 32px;
 }
 
-@media only screen and (max-width: 768px) {
-  .footer-bottom-right {
-    display: none;
-  }
+.footer-bottom-right {
+  display: none;
 }
 
 @media only screen and (min-width: 768px) {
@@ -642,7 +645,6 @@ template {
 
 .showcase-nfts {
   overflow-y: hidden;
-  overflow-x: hidden;
   overflow-x: scroll;
 }
 

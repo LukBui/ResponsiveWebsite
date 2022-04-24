@@ -19,12 +19,16 @@ footer {
 }
 .footer-right {
     display: grid;
-    grid-template-columns: 1fr 1fr; 
+    grid-template-columns: 1fr 1fr;
+    ul li {
+        display: block;
+        padding: 10px 0 0 0;
+        text-decoration: none;
+        list-style: none;
+    }
     a {
-    color: $textDark;
-    display: block;
-    padding: 10px 0 0 0;
-    text-decoration: none;
+        text-decoration: none;
+        color: $textDark;
     }
 }
 
@@ -36,10 +40,8 @@ footer p {
     margin: 40px 0 80px 32px;
 }
 
-@media only screen and (max-width:768px) {
-    .footer-bottom-right {
-        display: none;
-    }
+.footer-bottom-right {
+    display: none;
 }
 
 @media only screen and (min-width:768px) {

@@ -1,0 +1,79 @@
+.showcase {
+    margin: 10px 0 50px 32px;
+
+}
+
+.showcase ::-webkit-scrollbar {
+    display: none;
+}
+
+.showcase-nfts {
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+.nft {
+    align-content: center;
+    background-color: #eeeeee;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 30px;
+    width: 290px;
+}
+
+.showcase-nfts {
+    display: flex;
+    align-items: inline-flex;
+
+    .nft-info {
+        display: flex;
+        flex-direction: row;
+        .left-info {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            height: 75px;
+            justify-content: flex-start;
+            margin-left: 10px;
+            margin-right: 50px;
+            width: 110px;
+        }
+        .right-info {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            height: 75px;
+            justify-content: flex-end;
+            width: 110px;
+        }
+        .series {
+            color: #FF8139;
+            font-size: 12px;
+
+        }
+        .bid{
+            color: $textDark;
+            font-size: 12px;
+        }
+        .nft-name, .price {
+            color: $textBlack;
+            font-size: 20px;
+        }
+        .nft-number, .timeline {
+            color: $textDark
+        }
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .showcase {
+        margin: 40px 80px 100px 80px;
+        overflow: hidden;
+    }
+    .showcase-nfts {
+        display: flex;
+        justify-content: space-between;
+    }
+}

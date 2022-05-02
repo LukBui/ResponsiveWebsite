@@ -1,0 +1,38 @@
+header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 32px;
+}
+
+.logo {
+    height: 34px;
+}
+
+header nav {
+    display: none;
+}
+
+.hamburger-icon {
+    height: 22px;
+}
+
+@media only screen and (min-width:768px) {
+    header {
+        margin: 40px 0px 40px 80px;
+    }
+    .hamburger-icon {
+        display: none;
+    }
+    header nav {
+        display: inline-flex;
+    }
+    header nav a {
+        color: $textDark;
+        text-decoration: none;
+        margin-right: 80px;
+    }
+    .sign-up {
+        color: #ff3998;
+    }
+}
